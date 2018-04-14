@@ -68,30 +68,49 @@ nav span {
 
 /*Main and article section*/
 
-main .site-container {
+.icons.site-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.articles.site-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 main figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 8rem;
-  width: 5rem;
+  width: 8rem;
   margin: 3rem 3rem;
 }
 
-main figure img {
+#paper {
+  width: 3.5rem;
   height: auto;
-  width: 5rem;
 }
+
+#ruler,
+#truck {
+  width: 65%;
+  height: auto;
+}
+
 main figure h1 {
-  background-color: grey;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
   width: 100%;
 }
 
 article {
   width: 35%;
-  height: auto;
+  height: 12rem;
 }
 
 article h2 {
