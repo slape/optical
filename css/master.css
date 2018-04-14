@@ -12,7 +12,7 @@ body {
 
 /*Header and Hero section*/
 .site-container {
-  width: 960px;
+  width: 980px;
 }
 
 header.top-bar {
@@ -37,7 +37,7 @@ header img {
 }
 
 nav span {
-  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .hero {
@@ -51,7 +51,6 @@ nav span {
 }
 
 .banner {
-  width: 1050px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -145,4 +144,36 @@ footer img {
 footer figure {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 960px) {
+  .site-container {
+    width: 100%;
+  }
+
+  header.top-bar.site-container {
+    margin-top: 0;
+    padding: 1rem;
+  }
+
+  header figure {
+    margin-left: 1rem;
+  }
+  .hero {
+    height: 22rem;
+    width: 100%;
+    background-image: url("../resources/photos/glasses-bg.png");
+    background-size: cover;
+  }
+  .banner h1 {
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.33rem;
+    margin-right: 1.3rem;
+    padding: 0.75rem 4rem;
+  }
+
+  footer {
+    width: 100%;
+  }
 }
